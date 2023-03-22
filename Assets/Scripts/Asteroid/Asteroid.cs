@@ -17,7 +17,7 @@ namespace AtlastMision
 
         private void OnEnable()
         {
-            Vector3 playerPos = GameProcessor.Instance.player.localPosition;
+            Vector3 playerPos = GameProcessor.Instance.player.position;
             Vector3 pos = transform.position;
             Vector3 dir = playerPos - pos;
             rb.AddForce(dir * GameProcessor.Instance.gameData.asteroidSpeed);

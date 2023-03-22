@@ -35,7 +35,7 @@ namespace AtlastMision
             if (GameProcessor.Instance.isGameRunning)
             {
                 if(Time.time > difficultyNextRate ){
-                    //GameProcessor.Instance.gameData.difficulty +=1;
+                    GameProcessor.Instance.gameData.difficulty +=1;
                     difficultyNextRate = Time.time + GameProcessor.Instance.gameData.difficultyProgressionRate;
                 }
                 if (Time.time > nextRate)
@@ -58,7 +58,6 @@ namespace AtlastMision
                 float x = Random.Range(-range, range);
                 float z = Random.Range(-range, range);
                 Vector3 pos = new Vector3(randPos.x + x, randPos.y, randPos.z + z);
-
                 clone.transform.position = pos;
                 clone.SetActive(true);
             }

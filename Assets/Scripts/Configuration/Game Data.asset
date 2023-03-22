@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a001d9b468482cc41a1e53f0175f5ca9, type: 3}
   m_Name: Game Data
   m_EditorClassIdentifier: 
-  playerSpeed: 5
+  playerSpeed: 20
   playerRotationSpeed: 200
-  playerCurrentHealth: 10
+  playerCurrentHealth: 0
   playerTotalHealth: 10
-  count: 0
+  count: 126
   cameraOffset: {x: 0, y: 59.48, z: 0}
   projectileRange: 0.9
   projectileSpeed: 10000
@@ -24,7 +24,7 @@ MonoBehaviour:
   asteroidScreenSpawnRange: 50
   asteroidSpawnRate: 2
   asteroidSpeed: 15
-  asteroidLife: 3
+  asteroidLife: 5
   asteroidHalfLife: 1
   asteroidDamage: 1
   powerUpSpawnRate: 15
@@ -33,5 +33,5 @@ MonoBehaviour:
   powerUpCollectibles:
   - {fileID: 11400000, guid: 39d5dc231b671054f80648050e3a8b2a, type: 2}
   - {fileID: 11400000, guid: 3a12b874096edda49bb42d3ab668ef38, type: 2}
-  difficulty: 1
+  difficulty: 4
   difficultyProgressionRate: 20
